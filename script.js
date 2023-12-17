@@ -1,1 +1,2 @@
-document.getElementById("helloText").innerText = "Hello, World!";
+// Contents of script.js
+alert("Hello from external script!");
