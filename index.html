@@ -9,9 +9,8 @@
     <h1>Web Page with External Script</h1>
 
 <script>
-    alert("1:" + localStorage.getItem("test"));
-    localStorage.setItem("test", "123");
-    alert("2:" + localStorage.getItem("test"));
+    alert("1:" + localStorage.getItem("yourKey"));
+    
 </script>
 
     <!-- Include the external script.js file -->
@@ -30,7 +29,7 @@
       import { GoogleGenerativeAI } from "@google/generative-ai";
 
       // Fetch your API_KEY
-      const API_KEY = "...";
+      const API_KEY = storedValue;
 
       // Access your API key (see "Set up your API key" above)
       const genAI = new GoogleGenerativeAI(API_KEY);
